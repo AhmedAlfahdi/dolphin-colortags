@@ -1,0 +1,11 @@
+1.0.0 — initial release
+
+- Color Tag submenu in Dolphin's context menu: Red, Orange, Yellow, Green,
+  Blue, Purple, Gray, No Color, and Choose Color…
+- One-Commander-style popup palette with the current color ringed and keyboard
+  support (1–7, 0/Del, arrows, Enter, Esc).
+- Colored badges on folder and file icons; instant refresh through a D-Bus
+  signal, without reloading the folder.
+- Multi-selection with mixed-color detection and per-file error reporting.
+- colortag command line tool: set, get, clear, pick, list, JSON output.
+- System-wide and user-local install scripts, uninstall script, unit tests.

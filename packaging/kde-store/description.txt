@@ -1,0 +1,80 @@
+DOLPHIN COLOR TAGS
+
+Color tags for files and folders in Dolphin. Right-click any file or folder,
+choose Color Tag, pick one of seven colors, and a colored dot is drawn on the
+icon.
+
+Tags are stored in the user.colortag extended attribute. No daemon, no
+database, no indexer; a tag stays with the file when it is renamed or moved on
+the same filesystem.
+
+FEATURES
+
+- Color Tag submenu with Red, Orange, Yellow, Green, Blue, Purple, Gray and
+  No Color.
+- One-Commander-style popup palette with the current color ringed; keyboard
+  support (1-7, 0/Del, arrows, Enter, Esc).
+- Colored badges on folder and file icons in Details and Icons views.
+- Instant refresh through D-Bus: no F5, no reopening the folder.
+- Multi-selection, mixed-color detection and per-file error messages.
+- colortag command line tool: set, get, clear, pick, list, JSON output.
+
+REQUIREMENTS
+
+- Dolphin / Plasma 6 with KDE Frameworks 6. Tested with Dolphin 26.08.2,
+  KDE Frameworks 6.31 and Qt 6.12.
+- A filesystem with user extended attributes: ext4, btrfs, xfs, f2fs or zfs.
+  exFAT, FAT32 and most network shares are not supported.
+- To build: CMake, Ninja, a C++20 compiler, Qt 6 development files, KIO
+  development files and qt6-svg.
+
+INSTALLATION (ARCH LINUX, CACHYOS, MANJARO)
+
+  sudo pacman -S --needed base-devel cmake ninja qt6-base qt6-svg kio
+  tar xf dolphin-colortags-1.0.0.tar.gz
+  cd dolphin-colortags-1.0.0
+  ./scripts/install.sh
+  killall dolphin
+
+On other distributions, build with CMake and install to /usr; the README in
+the archive has the exact commands. ./scripts/install.sh --user performs a
+user-local install (needs QT_PLUGIN_PATH, see the README).
+
+USAGE
+
+Right-click one or more items, open Color Tag and choose a color.
+"Choose Color..." opens the palette at the mouse cursor. The submenu shows a
+check mark for the shared color; a mixed selection shows none.
+
+Command line examples:
+
+  colortag set red ~/Documents/report.pdf
+  colortag get ~/Documents
+  colortag pick ~/Downloads
+  colortag clear ~/report.pdf
+
+HOW IT WORKS
+
+The package contains two Dolphin plugins. An overlay-icon plugin reads
+user.colortag and returns a colortag-<id> badge for the icon. A
+file-item-action plugin adds the context menu, writes the attribute and emits
+a session-bus signal (org.kde.ColorTag) so open Dolphin windows repaint the
+affected items immediately.
+
+NOTES AND LIMITATIONS
+
+- Dolphin has no pluggable per-item color column, so the tag is shown as a
+  badge in the corner of the icon: 8 px in the Details view with small icons,
+  larger with bigger icons.
+- Local files only; remote URLs and archives are excluded.
+- One color per item.
+- Copying a file does not necessarily copy extended attributes; renaming or
+  moving on the same filesystem keeps the tag.
+- Restart Dolphin after installing or updating the plugin.
+- Dolphin's built-in "Assign Tags" (Baloo) and "Set Folder Icon" colors are
+  separate features and keep working.
+
+LICENSE
+
+GPL-2.0-or-later. The complete source code is included in the download
+archive.

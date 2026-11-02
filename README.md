@@ -239,6 +239,9 @@ Regenerate the badge SVGs after changing the palette:
 ./scripts/generate-icons.py
 ```
 
+KDE Store packaging (listing text, screenshots, release tarball) lives in
+[`packaging/kde-store/`](packaging/kde-store/README.md).
+
 ## License
 
 GPL-2.0-or-later. See [LICENSE](LICENSE).
