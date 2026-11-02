@@ -16,6 +16,7 @@ supported`).
 | `preview-1.png` | Screenshot 1: tags in Dolphin |
 | `preview-2.png` | Screenshot 2: the palette popup |
 | `dist/dolphin-colortags-1.0.0.tar.gz` | Download archive to upload |
+| `https://github.com/AhmedAlfahdi/dolphin-colortags/releases/tag/v1.0.0` | Public release page (same archive) |
 | `dist/SHA256SUMS` | Checksum for the archive |
 
 `dist/` is generated and not committed. Run `./make.sh` here to recreate it.
