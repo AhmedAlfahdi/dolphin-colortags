@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Name": "Color Tags",
+        "Description": "Assign color tags to files and folders",
+        "Icon": "colortag",
+        "License": "GPL-2.0-or-later",
+        "MimeTypes": [
+            "application/octet-stream",
+            "inode/directory"
+        ],
+        "ServiceTypes": [
+            "KFileItemAction/Plugin"
+        ]
+    }
+}
