@@ -71,6 +71,8 @@ NOTES AND LIMITATIONS
 - Copying a file does not necessarily copy extended attributes; renaming or
   moving on the same filesystem keeps the tag.
 - Restart Dolphin after installing or updating the plugin.
+- Unlike folder-icon recoloring add-ons, the folder icon itself is left
+  untouched, and the same tags work for files as well.
 - Dolphin's built-in "Assign Tags" (Baloo) and "Set Folder Icon" colors are
   separate features and keep working.
 
