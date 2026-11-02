@@ -12,8 +12,8 @@ Use these values in the Add Product form at <https://store.kde.org>.
 | Version | `1.0.0` |
 | License | `GPL-2.0-or-later` |
 | Price | Free |
-| Homepage | leave empty until a public repository exists |
-| Source code | included in the download archive |
+| Homepage | `https://github.com/AhmedAlfahdi/dolphin-colortags` |
+| Source code | `https://github.com/AhmedAlfahdi/dolphin-colortags` (also bundled in the download) |
 | Download file | `dist/dolphin-colortags-1.0.0.tar.gz` |
 | Screenshot 1 | `preview-1.png` (first: becomes the thumbnail) |
 | Screenshot 2 | `preview-2.png` |

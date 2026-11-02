@@ -79,4 +79,4 @@ NOTES AND LIMITATIONS
 LICENSE
 
 GPL-2.0-or-later. The complete source code is included in the download
-archive.
+archive and at https://github.com/AhmedAlfahdi/dolphin-colortags

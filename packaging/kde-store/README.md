@@ -45,9 +45,9 @@ supported`).
 ## After publishing
 
 - Add the product URL to the repository README.
-- If you create a public git repository (GitHub, GitLab, KDE Invent), add it as
-  the homepage/source link and mention it in the description. That is strongly
-  recommended for bug reports and updates.
+- The public repository is <https://github.com/AhmedAlfahdi/dolphin-colortags>;
+  releases live at <https://github.com/AhmedAlfahdi/dolphin-colortags/releases>.
+  Use those as the homepage/source links.
 - To ship an update, create a new archive with a bumped `project(VERSION ...)`
   in `CMakeLists.txt`, regenerate `dist/`, and add a new release on the product
   page (do not replace the file of an existing release).

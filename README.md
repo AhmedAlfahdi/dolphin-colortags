@@ -4,6 +4,9 @@ Color tags for files and folders in Dolphin: right-click an item, pick a color,
 and a colored dot is drawn on its icon. Tags are plain extended attributes, so
 they survive renames and moves and do not need a database or an indexer.
 
+Source code and issue tracker:
+<https://github.com/AhmedAlfahdi/dolphin-colortags>
+
 ![Dolphin showing folders and files with colored dots](docs/screenshot.png)
 
 The palette, matching the reference picker:
@@ -42,7 +45,8 @@ Tested with Dolphin 26.08.2, KDE Frameworks 6.31 and Qt 6.12 on Plasma 6.8
 
 ```bash
 sudo pacman -S --needed base-devel cmake ninja qt6-base qt6-svg kio
-cd /path/to/dolphin-colortags
+git clone https://github.com/AhmedAlfahdi/dolphin-colortags.git
+cd dolphin-colortags
 ./scripts/install.sh          # installs to /usr, asks for sudo
 ```
 
@@ -241,7 +245,8 @@ Regenerate the badge SVGs after changing the palette:
 
 KDE Store packaging assets (listing copy, previews and the release script) are
 kept in the development repository and are intentionally not part of the
-source archive.
+source archive. Releases are published at
+<https://github.com/AhmedAlfahdi/dolphin-colortags/releases>.
 
 ## License
 
