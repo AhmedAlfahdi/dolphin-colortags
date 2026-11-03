@@ -17,6 +17,7 @@ Use these values in the Add Product form at <https://store.kde.org>.
 | Download file | `dist/dolphin-colortags-1.0.0.tar.gz` |
 | Release page | `https://github.com/AhmedAlfahdi/dolphin-colortags/releases/tag/v1.0.0` |
 | Direct download (mirror) | `https://github.com/AhmedAlfahdi/dolphin-colortags/releases/download/v1.0.0/dolphin-colortags-1.0.0.tar.gz` |
+| Product logo | `logo.png` (1024×1024 PNG; the Store rejects SVG) |
 | Screenshot 1 | `preview-1.png` (first: becomes the thumbnail) |
 | Screenshot 2 | `preview-2.png` |
 | Tags | `dolphin`, `color tags`, `folder color`, `file manager`, `kde`, `plasma6`, `plugin`, `overlay icons` |

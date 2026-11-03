@@ -13,6 +13,7 @@ supported`).
 | `description.html` | Long description, HTML version |
 | `description.txt` | Long description, plain-text fallback |
 | `changelog.txt` | Changelog field |
+| `logo.png` | Product logo, 1024×1024 PNG (the Store rejects SVG) |
 | `preview-1.png` | Screenshot 1: tags in Dolphin |
 | `preview-2.png` | Screenshot 2: the palette popup |
 | `dist/dolphin-colortags-1.0.0.tar.gz` | Download archive to upload |
@@ -35,13 +36,14 @@ supported`).
 5. Description: switch the editor to HTML/source mode and paste
    `description.html`. If the editor only accepts plain text, paste
    `description.txt`.
-6. Upload `dist/dolphin-colortags-1.0.0.tar.gz` as the download file.
-7. Upload `preview-1.png` and `preview-2.png` as screenshots. Put
+6. Upload `logo.png` as the product logo (the form rejects SVG).
+7. Upload `dist/dolphin-colortags-1.0.0.tar.gz` as the download file.
+8. Upload `preview-1.png` and `preview-2.png` as screenshots. Put
    `preview-1.png` first: it becomes the product thumbnail.
-8. License: **GPL-2.0-or-later**. The source is inside the archive, so the
+9. License: **GPL-2.0-or-later**. The source is inside the archive, so the
    GPL source requirement is met even before a public git repository exists.
-9. Publish. New products usually go through moderation; the product URL appears
-   in your profile.
+10. Publish. New products usually go through moderation; the product URL appears
+    in your profile.
 
 ## After publishing
 

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#2b2b3a"/>
+      <stop offset="1" stop-color="#121218"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="inner"><path d="M330 322 H 702 Q 738 322 738 358 V 666 Q 738 702 702 702 H 330 Z"/></clipPath>
+  </defs>
+  <rect x="24" y="24" width="976" height="976" rx="228" fill="url(#bg)"/>
+  <rect x="30" y="30" width="964" height="964" rx="222" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="4"/>
+  <rect x="24" y="24" width="976" height="488" rx="228" fill="url(#shine)"/>
+  <g transform="rotate(-9 512 512)">
+    <path d="M 148 512 L 262 300 H 724 Q 760 300 760 336 V 688 Q 760 724 724 724 H 262 Z" fill="#000" opacity="0.35" transform="translate(0 16)"/>
+    <path d="M 148 512 L 262 300 H 724 Q 760 300 760 336 V 688 Q 760 724 724 724 H 262 Z" fill="#f7f5f0"/>
+    <g clip-path="url(#inner)">
+      <rect x="330" y="322" width="59" height="380" fill="#ff0000"/>
+      <rect x="389" y="322" width="59" height="380" fill="#ffa500"/>
+      <rect x="448" y="322" width="59" height="380" fill="#ffff00"/>
+      <rect x="507" y="322" width="59" height="380" fill="#008000"/>
+      <rect x="566" y="322" width="59" height="380" fill="#0000ff"/>
+      <rect x="625" y="322" width="59" height="380" fill="#800080"/>
+      <rect x="684" y="322" width="55" height="380" fill="#b3b3b3"/>
+    </g>
+    <path d="M330 322 H 702 Q 738 322 738 358 V 666 Q 738 702 702 702 H 330 Z" fill="none" stroke="#000" stroke-opacity="0.20" stroke-width="3"/>
+    <circle cx="240" cy="512" r="24" fill="#17171f"/>
+    <circle cx="240" cy="512" r="24" fill="none" stroke="#000" stroke-opacity="0.25" stroke-width="3"/>
+  </g>
+</svg>
